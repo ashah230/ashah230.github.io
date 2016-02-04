@@ -1,4 +1,6 @@
 /*Index page*/
+
+
 h1 { 
     font-size:72px;
     font-family:'Brandon Grotesque', sans-serif;
@@ -7,25 +9,29 @@ h1 {
 }
 h2{
     font-size:18px;
-    font-family:"Chaparral Pro", sans-serif;
+    font-family:"Brandon Grotesque", sans-serif;
     font-weight:100;
     text-align:center;
     margin-top:0px;
-    margin-bottom:50px;
-    
+    margin-bottom:0px;
+    margin:auto;
+    padding:20px;
+    text-transform:uppercase;
 }
 
 link{
 	text-decoration:none;
+	
 }
 
 a {
     text-decoration:none;
-    font-size:20px;
+    font-size:18px;
     font-family:"Brandon Grotesque", sans-serif;
     font-weight:100;
     text-align:center;
     padding:35px;
+    text-transform:uppercase;
     
 }
 a:hover{
@@ -40,7 +46,7 @@ a{
 #container {
 	width:80%;
 	margin: 0 auto;
-	height:300px;
+	height:250px;
 	display: flex;
 	flex-direction: row;
 	align-items:center;
@@ -49,8 +55,9 @@ a{
 }
 
 section{ 
-	width:200px;
-	height: 200px; 
+	width:100px;
+	height: 100px; 
+	border-radius:50px;
 }
 
 .top{ 
@@ -58,6 +65,7 @@ section{
 	display:flex;
 	align-items:center;
 	justify-content:center;
+	
 }
 
 .middle{ 
@@ -69,6 +77,22 @@ section{
 
 .bottom{ 
 	background-color: #f2f2f2;
+}
+
+h3{
+    font-size:50px;
+    text-decoration:none;
+    font-family:"Brandon Grotesque", sans-serif;
+    font-weight:100;
+    text-align:center;
+    padding:0px;
+    text-transform:uppercase;
+    margin:15px;
+    color:#bfcbba;
+}
+
+h3:hover{
+    color:#ff0066;
 }
 
 @media (min-width:901px) { 
