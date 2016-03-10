@@ -1,0 +1,12 @@
+.dot{
+    background-color:red;
+    width:100px;
+    height:100px;
+    display:inline-block;
+    margin:0; 
+    position:fixed;
+    z-index:10000;
+    border-radius:50px;
+    top:0;
+    left:0;
+}

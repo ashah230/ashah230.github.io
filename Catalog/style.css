@@ -1,0 +1,64 @@
+
+
+/*Concepts
+=============================
+Responsive Grid:
+
+Concept 1: 
+    Catalog for my portfolio:
+    grid that is responsive
+    collumns and rows
+    
+Concept 2: 
+    Catalog for all music I listen to:
+    grid that is responsive
+        Changes everytime new music comes up
+        connects to youtube
+        
+Concept 3:
+    Catalog for all my photography:
+    grid that is responsive
+    Albums that expand to content
+*/
+
+
+
+h1 { 
+    font-size:72px;
+    font-family:'Brandon Grotesque', sans-serif;
+    text-align:center;
+    margin-bottom:0px;
+    float:left;
+
+}
+
+h2{
+    font-size:18px;
+    font-family:"Brandon Grotesque", sans-serif;
+    font-weight:100;
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin:auto;
+    padding:20px;
+    text-transform:uppercase;
+    float:right;
+    vertical-align:center;
+}
+
+
+@media (min-width:901px) { 
+	body{ 
+		background-color: #C65178
+;
+
+
+}
+
+@media (max-width:900px) { 
+	body{ 
+		background-color: #ccE;
+	}
+
+}
+
