@@ -6,8 +6,8 @@ body{
 }
 
 .photo{
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     margin:auto;
     padding:30px;
     display:inline-block;
@@ -18,3 +18,34 @@ body{
 }
 
 img { border:none; }
+
+   :before { 
+    content: ""; 
+    display: block;
+    position: absolute; 
+    background: rgba(255,0,125, 0.5);
+} 
+
+.tint:hover:before { background: none; }
+
+h2{
+    font-family:"Brandon Grotesque", sans-serif;
+    font-size:20px;
+    width:100px;
+    height:30px;
+    color:#fff;
+    background-color:#ff007e;
+    border-radius:20px;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+nav{
+    display:block;
+    float:right;
+    position:fixed;
+    
+}
