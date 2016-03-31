@@ -1,0 +1,20 @@
+body{
+     background-image: url("images/bgpicture.jpg");
+     background-size:100% 100%;
+    background-color: #ff007e;
+    height:600px;
+}
+
+.photo{
+    width:200px;
+    height:200px;
+    margin:auto;
+    padding:30px;
+    display:inline-block;
+    position:relative;
+    top:20px;
+    left:20px;
+    
+}
+
+img { border:none; }

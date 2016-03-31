@@ -21,44 +21,259 @@ Concept 3:
     Albums that expand to content
 */
 
+#back{
+    width:30px;
+    
+}
 
-
-h1 { 
-    font-size:72px;
-    font-family:'Brandon Grotesque', sans-serif;
-    text-align:center;
-    margin-bottom:0px;
+img{
+    width:30px;
     float:left;
+    position:fixed;
+    left:20px;
+    margin-top:auto;
+    margin-bottom:auto;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    
+}
+body{
+    background:#FE8A7B;
+    font-family:"Brandon-Grotesque", sans-serif;
+    font-weight:300;
+}
 
+h1{
+    font-size:64px;
+    font-weight:100;
+    text-transform:uppercase;
+    margin-top:5px;
+    margin-bottom:5px;
 }
 
 h2{
-    font-size:18px;
-    font-family:"Brandon Grotesque", sans-serif;
-    font-weight:100;
-    text-align:center;
-    margin-top:0px;
-    margin-bottom:0px;
-    margin:auto;
-    padding:20px;
+    font-size:20px;
+    font-weight:400;
     text-transform:uppercase;
-    float:right;
-    vertical-align:center;
+    color:#76EDB3;
+    
 }
 
 
-@media (min-width:901px) { 
-	body{ 
-		background-color: #C65178
-;
-
-
+.posts{
+    display:block;
+    position:static;
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:80px;
+    padding-top:30px;
+    overflow:auto;
 }
 
-@media (max-width:900px) { 
-	body{ 
-		background-color: #ccE;
-	}
-
+.post-date{
+    font-size:12px;
+    padding-left:4px;
+    font-style:italic;
 }
 
+.highlight{
+    background-color:#a6a6a6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity:.3;
+    margin:40px;
+}
+
+.highlight:hover{
+    opacity:1;
+}
+
+
+
+
+/*navigation menu*/
+
+ul{
+    list-style-type: none;
+}
+
+ul#navmenu li{
+    list-style-type: none;
+    text-decoration:none;
+    width:160px;
+    text-align:center;
+    position:relative;
+    float:left;
+    margin-right:6px;
+    margin-left:6px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+ul#navmenu li:active{
+    -webkit-box-shadow: 0px 2px 0px #84261a;
+    -moz-box-shadow: 0px 2px 0px #84261a;
+    box-shadow: 0px 2px 0px #84261a;
+    position:relative;
+    top:8px;
+}
+
+ul#navmenu li, ul#navmenu a {
+    color:#4d4d4d;
+    list-style-type: none;
+    text-decoration:none;
+    display:block;
+    width:160px;
+    height:30px;
+    line-height:30px;
+    border-right:1px solid rgb(220, 131, 188);
+    box-shadow: 2px 2px 5px #ccc;
+    
+}
+ul#navmenu a{
+     background-color:#fff;
+}
+
+ul#navmenu .sub1 li {
+    list-style-type: none;
+    text-decoration:none;
+    margin-top:5px;
+    background-color:#fff;
+}
+
+ul#navmenu li:hover > a{
+    background-color: #76EDB3;
+}
+
+ a:visited{
+     text-decoration:none;
+     list-style-type: none;
+     color:#4d4d4d;
+ }
+
+ul#navmenu ul.sub1{
+    list-style-type: none;
+    display:none;
+    position:absolute;
+    top:9px;
+    left:0px;
+    padding-top:20px;
+}
+
+ul#navmenu li:hover .sub1{
+    display:block;
+}
+
+.sidebar-sticky{
+    max-width:40%;
+    margin-right:auto;
+    margin-left:auto;
+}
+.sidebar{
+    background-color:#fff;
+    display:inline;
+    position:fixed;
+    top:0;
+    left:0;
+    margin:auto;
+    width:100%;
+    padding:20px;
+}
+
+
+/*
+==========================================================================
+ MOBILE (max-width 479px)
+========================================================================== 
+*/ @media only screen and (max-width: 30em) {
+
+body { 
+        background:#ACD1B2; 
+        font-size:.75em; 
+    }
+.posts{
+        margin-top:175px;
+    }
+h2{
+    color:rgb(220, 131, 188);
+}
+h1{
+    font-size:32px;
+}
+}
+
+/*
+==========================================================================
+ MOBILE (min-width 480px)
+========================================================================== 
+*/ @media only screen and (min-width: 30em) {
+
+    body { 
+        background:#F7CF3A; 
+        font-size:.75em; 
+        
+    }
+    .posts{
+        margin-top:130px;
+    }
+h1{
+    font-size:40px;
+}
+}
+
+
+/* 
+==========================================================================
+ TABLETS (min-width 768px)
+========================================================================== 
+*/ @media only screen and (min-width: 48em) {
+
+body { 
+    background:#FCD6C3;  
+    font-size:.85em; 
+    
+}
+ .posts{
+        margin-top:95px;
+    }
+h1{
+    font-size:48px;
+}
+h2{
+    color:rgb(220, 131, 188);
+}
+}
+
+/* 
+==========================================================================
+ SCREENS (min-width 1140px)
+========================================================================== 
+*/ @media only screen and (min-width: 71.25em) {
+
+body { 
+    background:#FE8A7B;  
+    font-size:1em; 
+}
+
+ .posts{
+        margin-top:80px;
+    }
+
+
+h2{
+    color:#76EDB3;
+}
+}
+
+/* footer */
+p#footer{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    width:30px;
+    font-size:12px;
+    background-color:#fff;
+    opacity:.4;
+    padding:15px;
+    border:1 px solid #ccc;
+}

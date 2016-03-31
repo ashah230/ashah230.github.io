@@ -1,37 +1,19 @@
-/*for (var i = 0; i < 100; i++) {
-    $("body").append("<div class='dot'></div>");
-};*/
+var images= ["images/pic1.jpg", 
+"images/pic2.jpg", 
+"images/pic3.jpg",
+"images/pic4.jpg", 
+"images/pic5.jpg", 
+"images/pic6.jpg", 
+"images/pic7.jpg", 
+"images/pic8.jpg"];
 
-var images= ["images/pic1.jpeg", 
-"images/pic2.jpeg", 
-"images/pic3.jpeg",
-"images/pic4.jpeg",
-"images/pic5.jpeg";
-"images/pic6.jpeg",
-"images/pic7.jpeg",
-"images/pic8.jpeg",
-]
-
-/*function myPhoto{ 
-    var randomimg = Math.floor(Math.random()*(photography.length));
-    document.getElementById("photo").innerHTML = photography[randomimg];
-}
-   */
-   
-   
-    var currentimg = false;
-
+var currentImage = images[0];
 
 $(".mybutton").click(function() {
-    
-
-    var randomimg = images[Math.floor(Math.random()*images.length)];
-    
-    while (randomimg == currentimg) {
-        randomimg = images[Math.floor(Math.random()*images.length)];
-    }
-    
-    currentimg = randomimg;
-    
-    $(".stage").html("<img src='images/" + randomimg + "'>");
+    var image = images[Math.floor(Math.random()*images.length)];
+    while (image == currentImage) image = images[Math.floor(Math.random()*images.length)];
+    $("#myImage").attr("src", image);
+	$("#myImage").attr("class", "photo");
+	$("#myImage").attr("alt", "image");
+    currentImage = image;
 });
