@@ -55,7 +55,7 @@ end
 
 puts "Come again soon."
 
-=end
+
 
 students = ["Daniel", "Jim", "Alexa", "Frank"]
 puts students
@@ -70,3 +70,46 @@ end
 10.times do 
 puts "hello ayushi"
 end
+
+=end
+
+=begin javascript function:
+
+function addNums(num1, num2) {
+    var sum = num1+num2;
+    return sum; 
+}
+
+=end
+ 
+ 
+puts "Hello World"
+
+def sayHello(numberOfTimes, anotherParam)
+    puts "Hello World " * numberOfTimes
+    puts anotherParam
+end
+
+sayHello(10, "hellow")
+
+
+def addNums(num1, num2)
+    sum = num1+num2
+    puts sum
+end
+
+
+addNums(2,5)
+
+=begin javascript function:
+
+function addNums(num1, num2) {
+    var sum = num1+num2;
+    return sum; 
+}
+
+addNums (5,6)
+11
+
+these (5,6) are called arguments===== in ruby they are called parameters
+=end

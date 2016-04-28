@@ -1,0 +1,262 @@
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+     /*background-image: url("images/bgpicture.jpg");*/
+    background-size:100% 100%;
+    background-color: #e5eaec;
+    height:1200px;
+}
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 200px;
+  margin: 20px 50px 50px 50px;
+  position: relative;
+  width: 200px;
+}
+
+span.text-content {
+  
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  width: 200px;
+   opacity: .1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+.photo{
+    width:200px;
+    height:200px;
+    margin:30px;
+    padding:0px;
+    display:block;
+    position:relative;
+}
+.photo1{
+    width:250px;
+    margin:0px;
+    padding:0px;
+    display:inline-block;
+    position:absolute;
+}
+
+.blur img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.blur img:hover {
+  -webkit-filter: blur(5px);
+}
+
+.text-content{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:20px;
+    width:100px;
+    height:30px;
+    color:#fff;
+    background-color:#ff007e;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+button{ 
+    font-family: 'Josefin Slab', serif;
+    font-size:18px;
+    font-weight:300px;
+    width:150px;
+    padding:5px;
+    border:none;
+    color:#fff;
+    background-color:#ff007e;
+    padding:10px;
+    text-align:center;
+    display:inline-block;
+    align-items:center;
+    justify-content:center;
+    float:right;
+    margin-right:10px;
+    margin-top:27px;
+   box-shadow: 0 9px 3px #999;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+  
+button:hover{
+    background-color: #B20058;
+}  
+
+button:active {
+  background-color: #B20058;
+ box-shadow: 0 5px 2px #666;
+    transform: translateY(4px);
+}
+
+imglist .items{
+    margin-top:20px;
+    text-align:center;
+ 
+}
+
+#navbar{
+    background-color:#ff007e;
+    height:100px;
+    margin:0px;
+}
+#twelve{
+    height:200px;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:300px;
+    font-weight:600;
+    margin:auto;
+    position:fixed;
+    text-align: center;
+    color:#999;
+    opacity:.6;
+    z-index: -1;
+    background:url("images/icecream.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#container {
+   position: relative;
+}
+
+#background {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: -1;
+   overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:500px
+    color:#999;
+    opacity:.4;
+}
+
+ul.imglist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.imglist li {
+  display: inline-block;
+  height: 100px;
+  margin: 20px 50px 50px 50px;
+  position: relative;
+  width: 100px;
+}
+.text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:25px;
+    width:200px;
+    height:30px;
+    padding:10px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    
+}
+ul.imglist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.imglist li {
+  display: inline-block;
+  height: 200px;
+  margin: 20px 50px 50px 50px;
+  position: relative;
+  width: 200px;
+}
+span.text span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text {
+    cursor: pointer;
+  display: table;
+  height: 30px;
+  margin-top:100px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  color: transparent;
+}
+
+ul.imglist li:hover span.text {
+  color:#ff007e;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.photo2{
+    width:100%;
+    height:250%;
+}
